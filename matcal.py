@@ -22,62 +22,7 @@ class PairCenter:
         self.a = a
         self.b = b
         self.number = number
-# def get_all_cell(center,center_r,boundaySamples,oppath,oppath2):
-#     rt=Regular_triangulation_3(boundaySamples)
-#     rt.is_valid()
-#     all_pairs=[]
-#     cell2number = {tuple(center[k]): k for k in range(len(center))}
-   
-#     for edge in rt.finite_edges():
-#         flg=0
-#         cell = edge.first
-#         i = edge.second
-#         j = edge.third
-      
-#     # 你可以通过cell->vertex()来获取边的两个顶点
-#         a = cell.vertex((i+1)%4).point().point()
-#         b = cell.vertex((j+1)%4).point().point()
-       
-#         a=np.array([a.x(),a.y(),a.z()])
-#         b=np.array([b.x(),b.y(),b.z()])
-#         if a in center or b in center:
-#             if a in center:
-#                 if b in center:
-#                     flg = 1
-#             else:
-#                 if a in center:
-#                     flg = 2
-        
-#         if flg == 1 or flg == 2:
-#             temp_p = PairCenter(a, b, -1)
-#             if temp_p in all_pairs:
-#                 print("Found!", temp_p.a, temp_p.b)
-#                 continue
-#             else:
-#                 temp_p.number = 0
-#                 all_pairs.append(temp_p)
-#     with open(oppath, 'w') as out2:
-#         out2.write(f"{len(center)} {len(all_pairs)} {0}\n")
-#         for iii in range(len(center)):
-#             out2.write(f"v {center[iii][0]} {center[iii][1]} {center[iii][2]} {center_r[iii]}\n")
 
-#         for pair in all_pairs:
-#             a_number = np.where((pair.a == center).all(axis=1))[0]
-#             b_number =np.where((pair.b == center).all(axis=1))[0]
-#             out2.write(f"e {a_number[0]} {b_number[0]}\n")
-
-#         print("The number of edges:", len(all_pairs))
-#         print("Written to", oppath)
-#     with open(oppath2, 'w') as out2:
-#         out2.write(f"{len(center)} {len(all_pairs)} {0}\n")
-#         for iii in range(len(center)):
-#             out2.write(f"v {center[iii][0]} {center[iii][1]} {center[iii][2]}\n")
-
-#         for pair in all_pairs:
-#             a_number = np.where((pair.a == center).all(axis=1))[0]
-#             b_number =np.where((pair.b == center).all(axis=1))[0]
-#             out2.write(f"l {a_number[0]+1} {b_number[0]+1}\n")
-#     return all_pairs
 IN=-1
 OUT=1
 SUR=0

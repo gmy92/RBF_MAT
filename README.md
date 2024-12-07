@@ -51,4 +51,4 @@
 
 
 
-python matcal.py --input data/point_cloud.ply --output data/preprocessed.ply
+python matcal.py 

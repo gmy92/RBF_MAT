@@ -1,0 +1,10 @@
+torch
+numpy
+scipy
+trimesh
+open3d
+scikit-learn
+matplotlib
+polyscope
+tqdm
+georg-miniball3d

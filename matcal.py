@@ -36,8 +36,7 @@ inner_points = "random"
 max_time_SCP = 1000 # in second
 N=30 #中心数量 c                                                                                                                                                                                                                                       
 mesh_scale = 0.5
-# 假设你有一个包含10000个点的点云，每个点都有一个位置和一个法向量
-waiter = 0.4
+
 
 point_set = load_ply_points_normal('flower_new.ply')
 

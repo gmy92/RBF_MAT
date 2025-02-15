@@ -6,7 +6,7 @@ Created on Wed Jan 29 15:49:38 2020
 @author: cfillmor
 """
 import torch
-from georg_miniball3d import circumsphere_3d
+
 import time
 
 import scipy.spatial as spa
